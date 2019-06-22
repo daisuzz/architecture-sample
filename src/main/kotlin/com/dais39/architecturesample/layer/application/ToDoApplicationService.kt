@@ -5,7 +5,4 @@ import com.dais39.architecturesample.layer.domain.ToDo
 interface ToDoApplicationService{
 
     fun getToDo(): ToDo
-
-    fun getToDoWithAccount(): ToDo
-
 }
