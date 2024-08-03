@@ -1,0 +1,3 @@
+package com.daisuzz.architecturesample.onion.application.application_service
+
+interface ApplicationService

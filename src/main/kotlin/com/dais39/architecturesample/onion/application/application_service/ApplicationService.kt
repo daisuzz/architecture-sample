@@ -1,3 +1,0 @@
-package com.dais39.architecturesample.onion.application.application_service
-
-interface ApplicationService
