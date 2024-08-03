@@ -6,15 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class ToDoController(val toDoApplicationService: com.daisuzz.architecturesample.layer.application.ToDoApplicationService){
+class ToDoController(val toDoApplicationService: ToDoApplicationService) {
 
     @GetMapping("/todo")
-    fun getToDo(): com.daisuzz.architecturesample.layer.domain.ToDo {
+    fun getToDo(): ToDo {
         return toDoApplicationService.getToDo()
     }
 
     @GetMapping("/accounts/todo")
-    fun getToDoWithAccount(): com.daisuzz.architecturesample.layer.domain.ToDo {
+    fun getToDoWithAccount(): ToDo {
         return toDoApplicationService.getToDo()
     }
 }

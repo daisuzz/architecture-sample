@@ -5,10 +5,9 @@ import com.daisuzz.architecturesample.cqrs.infrastructure.dao.ToDoDao
 import org.springframework.stereotype.Service
 
 @Service
-class ToDoQueryServiceImpl(private val toDoDao: com.daisuzz.architecturesample.cqrs.infrastructure.dao.ToDoDao) :
-    com.daisuzz.architecturesample.cqrs.application.query.ToDoQueryService {
+class ToDoQueryServiceImpl(private val toDoDao: ToDoDao) : ToDoQueryService {
 
-    override fun getToDoList(): List<com.daisuzz.architecturesample.cqrs.domain.ToDo> {
+    override fun getToDoList(): List<ToDo> {
         return toDoDao.findToDoList()
     }
 }

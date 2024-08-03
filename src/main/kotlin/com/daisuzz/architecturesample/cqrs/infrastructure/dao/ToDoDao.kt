@@ -4,5 +4,5 @@ import com.daisuzz.architecturesample.cqrs.domain.ToDo
 
 interface ToDoDao {
 
-    fun findToDoList(): List<com.daisuzz.architecturesample.cqrs.domain.ToDo>
+    fun findToDoList(): List<ToDo>
 }

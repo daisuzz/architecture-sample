@@ -5,9 +5,9 @@ import com.daisuzz.architecturesample.layer.domain.ToDoRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-class ToDoRepositoryImpl: com.daisuzz.architecturesample.layer.domain.ToDoRepository {
+class ToDoRepositoryImpl : ToDoRepository {
 
-    override fun getToDo(): com.daisuzz.architecturesample.layer.domain.ToDo {
-        return com.daisuzz.architecturesample.layer.domain.ToDo()
+    override fun getToDo(): ToDo {
+        return ToDo()
     }
 }

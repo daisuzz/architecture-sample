@@ -4,12 +4,12 @@ import com.daisuzz.architecturesample.cqrs.domain.ToDo
 import org.springframework.stereotype.Component
 
 @Component
-class ToDoDaoImpl : com.daisuzz.architecturesample.cqrs.infrastructure.dao.ToDoDao {
+class ToDoDaoImpl : ToDoDao {
 
-    override fun findToDoList(): List<com.daisuzz.architecturesample.cqrs.domain.ToDo> {
+    override fun findToDoList(): List<ToDo> {
         return listOf(
-            com.daisuzz.architecturesample.cqrs.domain.ToDo(),
-            com.daisuzz.architecturesample.cqrs.domain.ToDo()
+            ToDo(),
+            ToDo()
         )
     }
 }

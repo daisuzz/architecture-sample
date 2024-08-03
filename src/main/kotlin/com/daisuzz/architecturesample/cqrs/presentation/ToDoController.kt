@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class ToDoController(
-    private val toDoQueryService: com.daisuzz.architecturesample.cqrs.application.query.ToDoQueryService,
-    private val toDoService: com.daisuzz.architecturesample.cqrs.application.service.ToDoService
+    private val toDoQueryService: ToDoQueryService,
+    private val toDoService: ToDoService
 ) {
 
     @GetMapping("/todo")
     fun getToDoList() = toDoQueryService.getToDoList()
 
     @PostMapping("/todo")
-    fun updateToDo(toDo: com.daisuzz.architecturesample.cqrs.domain.ToDo) = toDoService.registerTodo(toDo)
+    fun updateToDo(toDo: ToDo) = toDoService.registerTodo(toDo)
 }

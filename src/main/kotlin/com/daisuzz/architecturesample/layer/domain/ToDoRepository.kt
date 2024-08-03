@@ -1,6 +1,6 @@
 package com.daisuzz.architecturesample.layer.domain
 
-interface ToDoRepository{
+interface ToDoRepository {
 
-    fun getToDo(): com.daisuzz.architecturesample.layer.domain.ToDo
+    fun getToDo(): ToDo
 }
